@@ -1,0 +1,11 @@
+const router = require("express").Router();
+router.use('/users', require('./users/user.router'));
+router.use('/categories', require('./categories/category.router'));
+router.use('/filemanager', require('./filemanager/filemanager.router'));
+router.use('/items', require('./items/item.router'));
+router.use('/products', require('./products/product.controller'));
+router.use('/wishlist', require('./wishlist/wishlist.controller'));
+router.use('/order', require('./order/order.controller'));
+// router.use('/auth', require('./auth/auth.controller'));
+router.use('/general', require('./general/general.controller'));
+module.exports = router;

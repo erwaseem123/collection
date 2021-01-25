@@ -1,0 +1,14 @@
+{
+  "apps": [
+    {
+      	"name": "SportsWorld11",
+      	"script": "./server.js",
+      	"instances" : "4",
+     	  "exec_mode" : "cluster",
+     	  "node_args": "--optimize_for_size --gc_interval=100 --max_old_space_size=4096",
+      	"broadcast_logs": true,
+        "error_file" : "./log/err.log",
+        "out_file" : "./log/out.log"
+    }
+  ]
+}
